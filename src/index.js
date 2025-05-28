@@ -11,7 +11,15 @@ const onClickAdd = () => {
     const completeButon = document.createElement('button')
     completeButon.innerText = '完了'
     completeButon.addEventListener('click', () => {
-        console.log('完了--------------')
+        const moveTargt = completeButon.closest('li')
+        completeButon.nextElementSibling.remove()
+        completeButon.remove()
+
+        const backButton = document.createElement('button')
+        backButton.innerText = '戻す'
+
+        moveTargt.firstElementChild.appendChild(backButton)
+        document.getElementById('complete-list').appendChild(moveTargt)
     })
 
     const deleteButon = document.createElement('button')
