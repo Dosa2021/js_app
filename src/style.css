@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+}
+
+input {
+    border-radius: 8px;
+    border: none;
+    padding: 6px 16px;
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 4px 16px;
+}
+button:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: blue;
+}
+
+.input-area {
+    background-color: aqua;
+    width: 400px;
+    height: 30px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.incomplete-area {
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-row {
+    display: flex;
+    align-items: center;
+}
+
+.complete-area {
+    background-color: aqua;
+    border: 2px solid aqua;
+    width: 400px;
+    min-height: 200px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
